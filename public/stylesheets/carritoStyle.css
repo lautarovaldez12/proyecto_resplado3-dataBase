@@ -1,0 +1,193 @@
+/* GENERALES */
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body{
+    min-height: 100vh;
+    font-size: 15px;
+    background-color: #1f1f1f;
+    font-weight: 300;
+}
+
+
+.carrito ul,li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.carrito a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.carrito img{
+    width: 100%;
+}
+
+.carrito h2, h4{
+    color: #ffffff;
+}
+
+.carrito p, span{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+.carrito .corazon{
+    display: none;
+}
+
+.carrito a:hover{
+    color: black;
+}
+
+
+/* ACA EMPIEZA EL TITULO, EL TOTAL Y EL BOTON PARA PAGAR */
+
+.carrito h1{
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.carrito .botonPagar{
+    height: 50px;
+    width: 100%; 
+    background-color: #ff6600;;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    border-style: none;
+    margin-bottom: 15px;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.carrito .botonPagar:hover{
+    color: white;
+}
+
+.carrito .total p{
+    font-size: 20px;
+    text-transform: bold;
+}
+
+.carrito hr{
+    color: white;
+    margin-bottom: 35px;
+}
+
+/* ACA EMPIEZA LA SECCION DEL PRODUCTO, DESCRIPCION Y PRECIO */
+
+.carrito .imgIconos{
+    display: flex;
+    position: relative;
+}
+
+.carrito .imgIconos i.cruz{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+}
+.carrito .imgIconos i.cruz:hover{
+    color: #ff6600;
+}
+
+.carrito .imgIconos i.corazon{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 25px;
+    top: 55px;
+}
+
+.carrito .botonCantidad{
+    width: 100%;
+    background-color:  #ff6600;
+    border-color:  #ff6600;
+}
+
+.carrito .linea2{
+    margin-top: 35Px;
+}
+
+.carrito .precio{
+    text-align: center;
+    padding-top: 2px;
+    font-weight: bold;
+}
+
+/* <!-- ACA EMPIEZA EL RESUMEN DE LA COMPRA --> */
+
+.carrito section.resumen h2{
+    text-align: center;
+}
+
+.carrito section.resumen ul{
+    margin-top: 15px;
+}
+
+.carrito section.resumen li{
+    margin: 10px 0;
+}
+
+.carrito section.resumen .prec ul li{
+    text-align: right;
+}
+
+.carrito section.resumen .total{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.carrito section.resumen .botonPagar{
+    margin: 20px 0;
+}
+
+.carrito hr.linea3{
+    margin-bottom: 10px;
+}
+
+/* <!-- ACA EMPIEZA LA SECCION DE PREGUNTAS --> */
+
+.carrito .ayuda{
+    margin-bottom: 20px;
+}
+
+.carrito .ayudas{
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+.carrito .preguntas{
+    margin: 10px 0;
+}
+
+
+/* MEDIA QUERIES*/
+
+
+/*    --DESKTOP--- */
+@media(min-width: 992px){
+    .carrito .descProduct{
+        width: 80%;
+        font-size: 20px;
+    }
+    .carrito .imgIconos i.cruz{
+        top: -5px;   
+    }
+    .carrito .imgIconos i.corazon{
+        top: 50px;
+    }
+}

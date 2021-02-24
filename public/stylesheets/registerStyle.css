@@ -1,0 +1,99 @@
+/* GENERALES */
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body{
+    min-height: 100vh;
+    font-size: 15px;
+    background-color: #1f1f1f;
+    font-weight: 300;
+}
+
+
+
+.registro ul,li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.registro a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.registro img{
+    width: 100%;
+}
+
+.registro h1, h2, h4{
+    color: #ffffff;
+}
+
+.registro p, span{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+.registro a:hover{
+    color: black;
+}
+
+.registro .imagen{
+    background-color: #ff6600;
+    margin: 10px 0;
+}
+
+
+.registro .condiciones{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.registro .condiciones label{
+    color: white;
+}
+
+.registro .botonPagar{
+    height: 50px;
+    width: 100%; 
+    background-color: #ff6600;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    border-style: none;
+    margin-bottom: 15px;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+
+.registro .redes i{
+    font-size: 70px;
+    color: white;
+    margin: 25px 35px;
+}
+
+.registro .redes i:hover{
+    color: #ff6600;
+}
+
+/* MEDIA QUERIES*/
+
+/* --TABLET--*/
+@media(min-width: 768px){
+    .registro .titulos{
+        text-align: center;
+        padding: 15px;
+    }
+
+    .registro .custom-input-file{
+        margin: 0px 22px;
+    }
+}
+

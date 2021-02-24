@@ -1,0 +1,258 @@
+/* VARIABLES */
+
+:root {
+    --orange: #ff6600;
+    --red: #e30909;
+    --black: #1f1f1f;
+    --white: #ffffff;
+}
+
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: font-family, roboto, serif;
+}
+
+p{
+    color: #ffffff;
+}
+
+body{
+    background-image: url('../images/Fondo.png');
+    min-height: 100vh;
+
+
+}
+
+/* BANNER SLIDER */
+
+.home .banner-slide{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
+
+.home .carousel-inner, .carousel-item > img{
+    border-radius: 10px;
+
+}
+
+/* BANNER */
+
+.home section.banner img{
+    
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
+
+/* TITULO DESTACADOS */
+
+.home .titulo{
+    display: flex;
+}
+
+.home .titulo h2{
+    font-size: 24px;
+    margin-top: 20px;
+    margin: 0;
+    text-transform: capitalize;
+
+}
+
+.home .titulo-producto p {
+    padding-right: 25%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    
+}
+
+.home .line{
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    width: 80%;
+}
+
+.home .line2{
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    width: 80%;
+
+/* PRODUCTOS DESTACADOS */
+}
+
+.home .productos-box{
+    border: 1px solid var(--orange);
+    background-color: #272727;
+}
+
+.home .productos-box img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    background-color: white;
+    border: 5px solid #272727;
+    
+}
+
+.home .productos-box p{
+    font-family: roboto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.home .productos-box p:hover{
+    color: var(--orange);
+}
+
+.home .productos-box article {
+    display: inline;
+}
+
+.home .productos-box button{
+    margin-top: 10px;
+    height: 50px;
+    width: 50%;
+    background-color: #ff6600;
+    border-radius: 5px;
+    text-decoration: none;
+    border-style: none;
+    margin-bottom: 40px;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-left: 35px;
+
+}
+
+.home .productos-box button a{
+    text-decoration: none;
+    background-color: #ff6600;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.home .productos-box button a:hover{
+    color: var(--black);
+}
+
+.home .productos-box i{
+    color: var(--orange);
+    margin-left: 40px;
+    
+}
+
+/* MEDIA QUERIES */ 
+
+/* TABLET */
+
+@media(min-width:768px) {
+
+    /* SLIDER */
+
+    .home .banner-slide{
+        width: 90%;
+        margin-left: 50px;
+
+    }
+    .home .carousel-inner, .carousel-item > img{
+        border-radius: 10px;
+    
+    }
+     
+    /* BANNER */
+    .home section.banner img{
+    width: 90%;
+    margin-left: 50px;
+    }
+
+    /* PRODUCTOS */
+
+    .home .container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .home .productos-box{
+        margin: 15px;
+        height: 415px;
+    }
+
+    .home .titulo-producto p {
+        width: 46vh;
+    }
+
+   /*  .home .line{
+        width: 88vh;
+    }
+
+    .home .line2{
+        width: 89vh;
+
+    } */
+
+    /* DESKTOP */
+
+@media(min-width: 992px){
+
+    /* BANNER SLIDER */
+    .home .banner-slide{
+        width: 97%;
+        margin: 15px;
+    
+    }
+
+    .home .carousel-inner, .carousel-item > img{
+        height: 160px;
+        border-radius: 10px;
+    }
+    
+    /* BANNER */
+    .home section.banner img{
+        width: 97%;
+        margin: 15px;
+
+    }
+
+    /* PRODUCTOS */
+
+    .home .productos-box{
+        height: 415px;
+        margin: 9px;
+        margin-bottom: 20px;
+    
+    }
+
+   /*  .home .line{
+        width: 100vh;
+    }
+
+    .home .line2{
+        width: 100vh;
+    } */
+
+    .home .titulo-producto p{
+        width: 31vh;
+        padding-right: 25%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+    .home .productos-box button{
+        margin-left: 10px;
+    }
+
+}
+
+}

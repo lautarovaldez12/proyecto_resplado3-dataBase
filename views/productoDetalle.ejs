@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include("partials/head") %>
+</head>
+<body>
+    <%- include("partials/header") %>
+     <!-- HEADER -->
+     <div class="detalle-producto">
+        <div class="container">
+            <div class="product-detail row">
+                <article class="product-detail__title col-12">
+                    <h1><%-producto.title%> </h1>
+                </article>
+
+                <div class="product-detail__images-box col-12 col-lg-8">
+                    <figure class="product-detail__images-box--largeImg">
+                        <ul class="product-detail__images-box--slider">
+                            <li id="slide1">
+                                <img src="/images/<%-producto.image%>" alt="">
+                            </li>
+                            <li id="slide2">
+                                <img src="/images/<%-producto.image%>" alt="">
+                            </li>
+                            <li id="slide3">
+                                <img src="/images/<%-producto.image%>" alt="">
+                            </li>
+                        </ul>
+
+                    </figure>
+                    <div class="product-detail__images-box--thumbnail">
+                        <div class="product-detail__images-box--thumbnail_img">
+                            <a href="#slide1"><img widht="44" height="44" src="/images/<%-producto.image%>" alt=""></a>
+                        </div>
+                        <div class="product-detail__images-box--thumbnail_img">
+                            <a href="#slide2"><img widht="44" height="44" src="/images/<%-producto.image%>" alt=""></a>
+                        </div>
+                        <div class="product-detail__images-box--thumbnail_img">
+                            <a href="#slide3"><img widht="44" height="44" src="/images/<%-producto.image%>" alt=""></a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <section class="product-detail__data col-12 col-lg-4">
+                    <article class="product-detail__price">
+                        <p>$<%-producto.price%></p>
+                    </article>
+                    <div class="product-detail__data--caja1">
+                        <div class="product-detail__data--caja1__icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+
+                        <div class="product-detail__data--caja1__text">
+                            <% if (producto.stock === true) { %>
+                                <p>En Stock</p>
+                           
+                            <% } else { %>
+                                <p>Sin Stock</p>
+                            <% } %>
+                            
+                        </div>
+                    </div>
+                    <div class="product-detail__data--caja1">
+                        <div class="product-detail__data--caja1__icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+
+                        <div class="product-detail__data--caja1__text">
+                            <% if (producto.garantia === true) { %>
+                                <p>Con garantia</p>
+                           
+                            <% } else { %>
+                                <p>Sin Stock</p>
+                            <% } %>
+                            
+
+                        </div>
+                    </div>
+                    <div class="product-detail__data--caja1">
+                        <div class="product-detail__data--caja1__icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+
+                        <div class="product-detail__data--caja1__text">
+                            <p>Envios a todo el pais</p>
+                        </div>
+                    </div>
+
+                    <article class="product-detail__shop col-lg-12">
+                        <button>Comprar</button>
+                        <button>Agregar al carrito</button>
+                    </article>
+
+
+                </section>
+
+
+
+                <section class="product-detail__description col-12">
+                    <h2>Descripcion de Producto</h2>
+                    <p><%-producto.description%></p>
+                </section>
+
+                <section class="product-detail__feature col-12">
+                    <h2>Caracteristicas del Producto</h2>
+                    <ul class="product-detail__list">
+                        <li class="product-detail__list--li">
+                            <p><%- Object.keys(producto.insale) %> : <%- producto.mark %> </p>
+                        </li>
+                        <li class="product-detail__list--li">
+                            <p>Modelo : <%- producto.model %></p>
+                        </li>
+                    </ul>
+                    <ul class="product-detail__list">
+                        <li class="product-detail__list--li">
+                            <p>componente : <%- producto.component %></p>
+                        </li>
+                        <li class="product-detail__list--li">
+                            <p>Categoria : <%- producto.category %> </p>
+                        </li>
+                    </ul>
+                    <ul class="product-detail__list">
+                        <li class="product-detail__list--li">
+                            <p>Detalles : <br><%- producto.features %> </p>
+                        </li>
+                        <li class="product-detail__list--li">
+                          
+                            
+                        </li>
+                    </ul>
+
+                </section>
+
+
+
+            </div>
+            <article class="similar-products__title">
+                <h2>Productos Similares</h2>
+            </article>
+            <div class="similar-products col-12 col-lg-12">
+
+
+                <div class="similar-products__product-box">
+                    <figure>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_654958-MLA32146296720_092019-O.webp"
+                            alt="">
+                    </figure>
+
+                    <section>
+                        <p>NOMBRE DEL PRODUCTO</p>
+                        <P>PRECIO DEL PRODUCTO</P>
+                    </section>
+
+                    <article class="similar-products__product-box--button">
+                        <button>Ver Producto</button>
+                    </article>
+
+                </div>
+                <div class="similar-products__product-box">
+                    <figure>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_654958-MLA32146296720_092019-O.webp"
+                            alt="">
+                    </figure>
+
+                    <section>
+                        <p>NOMBRE DEL PRODUCTO</p>
+                        <P>PRECIO DEL PRODUCTO</P>
+                    </section>
+
+                    <article class="similar-products__product-box--button">
+                        <button>Ver Producto</button>
+                    </article>
+
+                </div>
+                <div class="similar-products__product-box desktop-hide">
+                    <figure>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_654958-MLA32146296720_092019-O.webp"
+                            alt="">
+                    </figure>
+
+                    <section>
+                        <p>NOMBRE DEL PRODUCTO</p>
+                        <P>PRECIO DEL PRODUCTO</P>
+                    </section>
+
+                    <article class="similar-products__product-box--button">
+                        <button>Ver Producto</button>
+                    </article>
+
+                </div>
+                <div class="similar-products__product-box desktop-hide">
+                    <figure>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_654958-MLA32146296720_092019-O.webp"
+                            alt="">
+                    </figure>
+
+                    <section>
+                        <p>NOMBRE DEL PRODUCTO</p>
+                        <P>PRECIO DEL PRODUCTO</P>
+                    </section>
+
+                    <article class="similar-products__product-box--button">
+                        <button>Ver Producto</button>
+                    </article>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <%- include("partials/what") %> 
+    <!-- FOOTER -->
+    <%- include("partials/footer") %>
+
+    <%- include("partials/scriptBS") %>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
